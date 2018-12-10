@@ -1,0 +1,10 @@
+Requires only base python and numpy and matplotlib only.
+
+Small demo of applying SARSA to the windy gridworld problem.
+
+Execute via terminal: 
+- cd <directory>/src
+- python 3 WindyGW_Sarsa.py
+
+In the process, a plot with the rewards over time is shown. The plot converges towards -13 with is the optimal reward for this problem.
+In addition, the path taken is shown. 
