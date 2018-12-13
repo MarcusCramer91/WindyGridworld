@@ -29,7 +29,7 @@ class Gridworld:
             raise Exception("Illegal move command.")
 
         # apply winds to the current position
-        new_position[0] -= self.winds[self.current_position[1]]
+        new_position[0] -= self.winds[new_position[1]]
 
         # ensure that the map cannot be left
         if new_position[0] < 0:

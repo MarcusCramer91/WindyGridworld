@@ -155,7 +155,6 @@ class Agent:
             index += 1
 
 
-
 def print_board(world: Gridworld, position):
     print()
     board = np.zeros(world.get_world_dimensions())
@@ -181,6 +180,6 @@ if __name__ == '__main__':
     ret = player.follow_optimal_policy()
     print("Reward is", ret)
 
-    plt.plot(np.cumsum(rewards))
+    plt.plot(rewards)
     plt.show()
 
