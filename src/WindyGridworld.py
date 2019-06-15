@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from collections import defaultdict
+import seaborn
 
 class Gridworld:
     def __init__(self):
@@ -176,10 +177,12 @@ if __name__ == '__main__':
     states_printout = np.around(states_printout, decimals=2)
     print(states_printout)
 
-
     ret = player.follow_optimal_policy()
     print("Reward is", ret)
 
     plt.plot(rewards)
     plt.show()
+    plt.show()
 
+    seaborn.heatmap(states_printout, vmin=-1, vmax=1)
+    plt.show()
