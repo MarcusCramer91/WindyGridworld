@@ -163,6 +163,7 @@ def print_world(world: Gridworld):
                 print("0", end = "\t")
         print()
     print("----------------------------------------")
+    print("----------------------------------------")
     print()
 
 
